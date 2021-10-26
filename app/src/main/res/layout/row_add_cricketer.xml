@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/CustomLinearLayout"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/round_gray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="40dp"
+        android:hint="Cricketer name"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/cricketerName"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_gray"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/closeButton"
+        android:src="@drawable/ic_close"
+        app:tint="@color/black" />
+</LinearLayout>
